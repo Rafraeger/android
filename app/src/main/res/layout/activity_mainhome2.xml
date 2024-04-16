@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainhome2">
+
+
+        <ImageView
+            android:id="@+id/backgroundImageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/picture2b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="274dp"
+            android:layout_height="229dp"
+            android:src="@drawable/picture2a"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="426dp"
+            android:layout_height="478dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="332dp"
+            android:layout_marginEnd="42dp"
+            android:src="@drawable/picture2d"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="342dp"
+            android:layout_height="385dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="42dp"
+            android:src="@drawable/picture2c"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnlogin"
+            android:backgroundTint="@color/blue2"
+            android:layout_width="261dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="192dp"
+            android:textColor="@color/white"
+            android:text="Login"
+            android:background="@drawable/button1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:layout_width="261dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:text="Register"
+            android:background="@drawable/button1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
