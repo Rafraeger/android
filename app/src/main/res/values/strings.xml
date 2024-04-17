@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="terpercaya_">Terpercaya lebih\ndari 45 tahun</string>
+
+    <string name="kebaikan_al">
+Kebaikan Alam\nKebaikan Hidup
+</string>
 </resources>
