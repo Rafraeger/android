@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".main_menu"
+            android:exported="true" />
+        <activity
+            android:name=".page_register"
+            android:exported="true" />
+        <activity
+            android:name=".page_login"
+            android:exported="true" />
+        <activity
             android:name=".Mainhome2"
             android:exported="true" />
         <activity

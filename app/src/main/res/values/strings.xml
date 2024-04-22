@@ -5,4 +5,39 @@
     <string name="kebaikan_al">
 Kebaikan Alam\nKebaikan Hidup
 </string>
+
+    <string name="login">
+Login
+</string>
+
+    <string name="email">
+Email
+</string>
+
+    <string name="password">
+Kata Sandi
+</string>
+
+    <string name="kebaikan_be">KEBAIKAN\nBERAWAL\nDARI SINI</string>
+
+    <string name="selamat_pag">Selamat Pagi </string>
+
+    <string name="olivia_gabr">
+olivia.gabrielle@gmail.com
+</string>
+
+    <string name="scan_kode_d">
+Scan kode dibalik tutup botol dan tukarkan hadiah menarik
+</string>
+
+
+    <string name="vaganza_fie">
+Vaganza Fiesta
+</string>
+
+    <string name="hadiah_mena">
+Hadiah Menarik
+</string>
+
+
 </resources>

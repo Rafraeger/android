@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_menu">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/backgroundImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/main_menu_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/freestocks_"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="19.91dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="74.64dp"
+                android:background="@drawable/pp_dummy"
+                />
+
+            <TextView
+                android:id="@+id/selamat_pag"
+                android:layout_width="338dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="85dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/selamat_pag"
+                android:textAppearance="@style/selamat_pag" />
+
+            <TextView
+                android:id="@+id/selamat_name"
+                android:layout_width="338dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="142dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="110dp"
+                android:text="Olivia Gabrielle"
+                android:textStyle="bold"
+                android:textAppearance="@style/selamat_pag"
+                android:lineSpacingExtra="1sp"
+                android:gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:id="@+id/olivia_gabr"
+                android:layout_width="318dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="145dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="15sp"
+                android:text="@string/olivia_gabr"
+                android:textAppearance="@style/olivia_gabr" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_view"
+                android:layout_width="936dp"
+                android:layout_height="180dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="257dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <RelativeLayout
+                    android:id="@+id/horizontal_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/oip_4_1"
+                        android:layout_width="317dp"
+                        android:layout_height="214dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/horz_1" />
+
+                    <RelativeLayout
+                        android:id="@+id/oip_4_2"
+                        android:layout_width="317dp"
+                        android:layout_height="214dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/oip_4_1"
+                        android:background="@drawable/horz_2">
+
+                        <View
+                            android:id="@+id/group_374"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="51dp"
+                            android:background="@drawable/group_374" />
+
+                        <View
+                            android:id="@+id/group_373"
+                            android:layout_width="88dp"
+                            android:layout_height="21dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="124dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="58dp"
+                            android:background="#1A529D"/>
+
+                        <View
+                            android:id="@+id/rectangle_489"
+                            android:layout_width="140dp"
+                            android:layout_height="21dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="123dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="100dp"
+                            android:background="#1A529D"
+                            />
+
+                        <TextView
+                            android:id="@+id/scan_kode_d"
+                            android:layout_width="157dp"
+                            android:layout_height="87dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="124dp"
+                            android:layout_marginTop="55dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/scan_kode_d"
+                            android:textAppearance="@style/scan_kode_d" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/oip_4_3"
+                        android:layout_width="317dp"
+                        android:layout_height="214dp"
+                        android:layout_toRightOf="@id/oip_4_2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/horz_3"
+                        />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rectangle_4"
+                android:layout_width="368dp"
+                android:layout_height="258dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="464dp"
+                android:background="@drawable/count_tutup_botol_bg"
+                android:elevation="10dp">
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/group_379"
+                android:layout_width="175dp"
+                android:layout_height="211dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="224dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="774dp"
+                android:background="@drawable/group_379">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_378"
+                android:layout_width="175dp"
+                android:layout_height="211dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="774dp"
+                android:background="@drawable/group_378">
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/group_380"
+                android:layout_width="175dp"
+                android:layout_height="211dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1004dp"
+                android:background="@drawable/group_380">
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/group_381"
+                android:layout_width="175dp"
+                android:layout_height="211dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="224dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1004dp"
+                android:background="@drawable/group_381">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_3668"
+                android:layout_width="368dp"
+                android:layout_height="122dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1297dp"
+                android:clipToOutline="true"
+                android:background="@drawable/frame_3668"
+                android:elevation="5dp">
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/group_869"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="350dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="97dp"
+                android:background="@drawable/group_869"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/vaganza_fie"
+                android:layout_width="258dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="734dp"
+                android:text="@string/vaganza_fie"
+                android:textAppearance="@style/vaganza_fie"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/hadiah_mena"
+                android:layout_width="258dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1254dp"
+                android:text="@string/hadiah_mena"
+                android:textAppearance="@style/hadiah_mena"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center_vertical"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
