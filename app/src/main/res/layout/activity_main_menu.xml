@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="end"
-        app:headerLayout="@layout/sidebar" />
+        app:headerLayout="@layout/activity_side_bar_nav" />
 
 
     <ScrollView
@@ -184,11 +184,38 @@
                 android:layout_width="368dp"
                 android:layout_height="258dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="31dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
                 android:layout_marginTop="464dp"
-                android:background="@drawable/count_tutup_botol_bg"
+                android:background="@drawable/group_372_t"
                 android:elevation="10dp">
+
+
+                <Button
+                    android:id="@+id/group_361"
+                    android:layout_width="164.46dp"
+                    android:layout_height="101dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="29dp"
+                    android:background="@drawable/group_361"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/some_id"
+                    android:layout_width="105dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="156dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="-25sp"
+                    android:text="@string/some_id"
+                    android:textAppearance="@style/some_id" />
+
+
             </RelativeLayout>
             
             <RelativeLayout
@@ -199,7 +226,15 @@
                 android:layout_marginLeft="224dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="774dp"
-                android:background="@drawable/group_379">
+                android:background="@drawable/group_379_t">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="97dp"
+                    android:layout_marginBottom="123dp"
+                    android:background="@drawable/pls_mns" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -207,10 +242,20 @@
                 android:layout_width="175dp"
                 android:layout_height="211dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="31dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
                 android:layout_marginTop="774dp"
-                android:background="@drawable/group_378">
+                android:background="@drawable/group_378_t">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="97dp"
+                    android:layout_marginBottom="123dp"
+                    android:background="@drawable/pls_mns" />
+
             </RelativeLayout>
             
             <RelativeLayout
@@ -221,7 +266,15 @@
                 android:layout_marginLeft="31dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="1004dp"
-                android:background="@drawable/group_380">
+                android:background="@drawable/group_380_t">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="97dp"
+                    android:layout_marginBottom="123dp"
+                    android:background="@drawable/pls_mns" />
             </RelativeLayout>
             
             <RelativeLayout
@@ -232,7 +285,15 @@
                 android:layout_marginLeft="224dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="1004dp"
-                android:background="@drawable/group_381">
+                android:background="@drawable/group_381_t">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="97dp"
+                    android:layout_marginBottom="123dp"
+                    android:background="@drawable/pls_mns" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -240,22 +301,33 @@
                 android:layout_width="368dp"
                 android:layout_height="122dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="31dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
                 android:layout_marginTop="1297dp"
+                android:background="@drawable/group_382"
                 android:clipToOutline="true"
-                android:background="@drawable/frame_3668"
                 android:elevation="5dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="27dp"
+                    android:background="@drawable/pls_mns" />
             </RelativeLayout>
 
             <Button
                 android:id="@+id/group_869"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="350dp"
-                android:layout_marginTop="97dp"
+                android:layout_marginStart="341dp"
+                android:layout_marginLeft="341dp"
+                android:layout_marginTop="95dp"
                 android:background="@drawable/group_869"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -286,6 +358,7 @@
                 android:lineSpacingExtra="8sp"
                 android:gravity="center_vertical"
                 />
+
 
 
 

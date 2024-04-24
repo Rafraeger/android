@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/ic_people_sidebar" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="20dp"
+            android:textColor="@color/semi_black"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="28dp"
+            app:srcCompat="@drawable/line_sidebar" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/ic_setting" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="20dp"
+            android:textColor="@color/semi_black"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="28dp"
+            app:srcCompat="@drawable/line_sidebar" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/ic_bookmark" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmark"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="20dp"
+            android:textColor="@color/semi_black"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="28dp"
+            app:srcCompat="@drawable/line_sidebar" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/ic_notification" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifikasi"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="20dp"
+            android:textColor="@color/semi_black"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="28dp"
+            app:srcCompat="@drawable/line_sidebar" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/ic_logout" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="20dp"
+            android:textColor="@color/semi_black"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="28dp"
+            app:srcCompat="@drawable/line_sidebar" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

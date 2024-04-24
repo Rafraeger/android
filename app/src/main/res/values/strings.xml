@@ -39,5 +39,13 @@ Vaganza Fiesta
 Hadiah Menarik
 </string>
 
+    <string name="temukan_kod">
+Temukan kode\ndibalik tutup botol
+</string>
+
+    <string name="some_id">
+30
+</string>
+
 
 </resources>

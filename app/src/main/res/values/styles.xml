@@ -98,7 +98,16 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
+    <style name="temukan_kod">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#4D4D4D</item>
 
+    </style>
+
+    <style name="some_id">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
 
 
 </resources>

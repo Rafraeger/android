@@ -5,4 +5,5 @@
     <color name="white">#FFFFFF</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="semi_black">#4D4D4D</color>
 </resources>
