@@ -10,6 +10,8 @@ import android.widget.Button;
 import androidx.core.view.GravityCompat;
 
 
+
+
 public class main_menu extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -22,6 +24,8 @@ public class main_menu extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawer_layout);
         groupButton = findViewById(R.id.group_869);
+
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
         groupButton.setOnClickListener(new View.OnClickListener() {
             @Override

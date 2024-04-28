@@ -64,15 +64,14 @@
                 android:layout_width="338dp"
                 android:layout_height="46dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="142dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="142dp"
                 android:layout_marginTop="110dp"
-                android:text="Olivia Gabrielle"
-                android:textStyle="bold"
-                android:textAppearance="@style/selamat_pag"
-                android:lineSpacingExtra="1sp"
                 android:gravity="center_vertical"
-                />
+                android:lineSpacingExtra="1sp"
+                android:text="Olivia Gabrielle"
+                android:textAppearance="@style/selamat_pag"
+                android:textStyle="bold" />
 
 
             <TextView
