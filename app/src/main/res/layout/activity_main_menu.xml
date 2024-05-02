@@ -40,11 +40,10 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="19.91dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="19.91dp"
                 android:layout_marginTop="74.64dp"
-                android:background="@drawable/pp_dummy"
-                />
+                android:background="@drawable/pp_dummy" />
 
             <TextView
                 android:id="@+id/selamat_pag"
@@ -117,6 +116,7 @@
                         android:layout_height="214dp"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
+                        android:onClick="scan"
                         android:layout_toRightOf="@id/oip_4_1"
                         android:background="@drawable/horz_2">
 
@@ -135,21 +135,20 @@
                             android:layout_width="88dp"
                             android:layout_height="21dp"
                             android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="124dp"
                             android:layout_alignParentTop="true"
+                            android:layout_marginLeft="124dp"
                             android:layout_marginTop="58dp"
-                            android:background="#1A529D"/>
+                            android:background="#1A529D" />
 
                         <View
                             android:id="@+id/rectangle_489"
                             android:layout_width="140dp"
                             android:layout_height="21dp"
                             android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="123dp"
                             android:layout_alignParentTop="true"
+                            android:layout_marginLeft="123dp"
                             android:layout_marginTop="100dp"
-                            android:background="#1A529D"
-                            />
+                            android:background="#1A529D" />
 
                         <TextView
                             android:id="@+id/scan_kode_d"

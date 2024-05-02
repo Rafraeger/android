@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -33,6 +34,12 @@ public class main_menu extends AppCompatActivity {
                 drawerLayout.openDrawer(GravityCompat.END);
             }
         });
+
+    }
+
+    public void scan(View view) {
+        Intent intent = new Intent(main_menu.this,scan_tutup_botol.class);
+        startActivity(intent );
 
     }
 }

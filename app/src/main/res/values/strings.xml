@@ -47,5 +47,19 @@ Temukan kode\ndibalik tutup botol
 30
 </string>
 
+    <string name="scan_tutup_">
+Scan Tutup Botol
+</string>
+
+    <string name="total_tutup">
+Total Tutup Botol\n<b>Olivia Gabrielle</b> <font color="#1A529D">30</font>
+</string>
+
+    <string name="setiap_kali">
+Setiap kali Anda berhasil memindai kode yang belum pernah diklaim sebelumnya, Anda akan menerima 1 poin.
+</string>
+
+
+
 
 </resources>

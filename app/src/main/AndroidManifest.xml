@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".scan_tutup_botol"
+            android:exported="true" />
+        <activity
             android:name=".side_bar_nav"
             android:exported="true" />
         <activity

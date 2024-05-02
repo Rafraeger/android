@@ -110,4 +110,25 @@
     </style>
 
 
+    <style name="scan_tutup_">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">30</item>
+    </style>
+
+    <style name="total_tutup">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#4E5355</item>
+    </style>
+
+    <!-- styles.xml -->
+    <style name="setiap_kali">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
 </resources>
