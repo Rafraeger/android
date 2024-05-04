@@ -6,21 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class scan_tutup_botol extends AppCompatActivity {
+public class scan_ktp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan_tutup_botol);
+        setContentView(R.layout.activity_scan_ktp);
     }
 
-    public void main_menu(View view) {
-        Intent intent = new Intent(scan_tutup_botol.this,main_menu.class);
+    public void scan_tutup_botol(View view) {
+        Intent intent = new Intent(scan_ktp.this,scan_tutup_botol.class);
         startActivity(intent );
 
     }
-    public void scan_ktp(View view) {
-        Intent intent = new Intent(scan_tutup_botol.this,scan_ktp.class);
+
+    public void selamat(View view) {
+        Intent intent = new Intent(scan_ktp.this,selamat_klaim_tutup_botol.class);
         startActivity(intent );
 
     }

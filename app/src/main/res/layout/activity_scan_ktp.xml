@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".scan_tutup_botol">
+    tools:context=".scan_ktp">
 
     <RelativeLayout
         android:id="@+id/group_385"
@@ -24,7 +24,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
             android:background="@drawable/vector_ek4"
-            android:onClick="main_menu"
+            android:onClick="scan_tutup_botol"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
@@ -75,7 +75,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="-10dp"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/setiap_kali"
+        android:text="@string/scan_ktp_un"
         android:textAppearance="@style/setiap_kali"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,10 +83,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="270dp"
-        android:layout_height="270dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/group_384"
+        android:layout_width="348dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/group_388"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,30 +94,13 @@
 
 
     <RelativeLayout
-        android:id="@+id/group_386"
-        android:layout_width="223dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/rectangle_494"
-            />
-
-    </RelativeLayout>
-
-    <RelativeLayout
         android:id="@+id/frame_3670"
         android:layout_width="319dp"
         android:layout_height="122dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/group_386">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <Button
             android:id="@+id/btnlogin"
@@ -126,7 +109,7 @@
             android:background="@drawable/button1"
             android:backgroundTint="@color/blue2"
             android:text="Submit"
-            android:onClick="scan_ktp"
+            android:onClick="selamat"
             android:textColor="@color/white" />
 
         <Button

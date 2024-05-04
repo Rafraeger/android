@@ -59,7 +59,9 @@ Total Tutup Botol\n<b>Olivia Gabrielle</b> <font color="#1A529D">30</font>
 Setiap kali Anda berhasil memindai kode yang belum pernah diklaim sebelumnya, Anda akan menerima 1 poin.
 </string>
 
-
+    <string name="scan_ktp_un">
+Scan KTP untuk melanjutkan proses klaim tutup botol. Pastikan foto KTP terlihat dengan jelas
+</string>
 
 
 </resources>
