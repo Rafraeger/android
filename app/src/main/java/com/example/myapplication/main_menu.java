@@ -38,7 +38,7 @@ public class main_menu extends AppCompatActivity {
     }
 
     public void scan(View view) {
-        Intent intent = new Intent(main_menu.this,scan_tutup_botol.class);
+        Intent intent = new Intent(main_menu.this,scan1.class);
         startActivity(intent );
 
     }
