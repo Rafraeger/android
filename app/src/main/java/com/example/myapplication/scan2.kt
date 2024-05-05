@@ -20,7 +20,7 @@ import com.budiyev.android.codescanner.ScanMode
 
 private const val CAMERA_REQUEST_CODE = 101
 
-class scan1 : AppCompatActivity() {
+class scan2 : AppCompatActivity() {
 
     private lateinit var codeScanner: CodeScanner
     private lateinit var scannerView: CodeScannerView
@@ -28,22 +28,10 @@ class scan1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scan1)
+        setContentView(R.layout.activity_scan2)
 
 
-        val menu = findViewById<Button>(R.id.vector)
-        menu.setOnClickListener {
-            Intent(this, main_menu::class.java).also{
-                startActivity(it)
-            }
-        }
 
-        val btnlogin = findViewById<Button>(R.id.btnlogin)
-        btnlogin.setOnClickListener {
-            Intent(this, scan2::class.java).also{
-                startActivity(it)
-            }
-        }
 
         // Inisialisasi tv_textView dengan findViewById()
         tv_textView = findViewById(R.id.tv_textView)

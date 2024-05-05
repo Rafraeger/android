@@ -16,6 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".scan2"
+            android:exported="true" />
+        <activity
+            android:name=".scantutupbotol"
+            android:exported="true" />
+        <activity
             android:name=".scan1"
             android:exported="true" />
         <activity
