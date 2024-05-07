@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:background="@drawable/group_15"
+    tools:context=".redeemv2">
+    <RelativeLayout
+        android:id="@+id/group_385"
+        android:layout_width="220dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/vector"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/vector_ek4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/scan_tutup_"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/redeemvagan"
+            android:textAppearance="@style/redeemvagan" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rectangle_11"
+        android:layout_width="321dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/rectangle_11"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:paddingStart="16dp"
+            android:text="Poin anda"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:paddingEnd="16dp"
+            android:text="300"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menus"
+        android:layout_marginTop="-220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_11">
+        <ImageView
+            android:id="@+id/group_378a"
+            android:layout_width="175dp"
+            android:layout_height="211dp"
+            android:background="@drawable/group_378a"
+            />
+        <ImageView
+            android:id="@+id/group_379a"
+            android:layout_width="175dp"
+            android:layout_height="211dp"
+            android:background="@drawable/group_379a"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menus">
+        <ImageView
+            android:id="@+id/group_380a"
+            android:layout_width="175dp"
+            android:layout_height="211dp"
+            android:background="@drawable/group_380a"
+            />
+        <ImageView
+            android:id="@+id/group_870a"
+            android:layout_width="175dp"
+            android:layout_height="211dp"
+            android:background="@drawable/group_870a"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

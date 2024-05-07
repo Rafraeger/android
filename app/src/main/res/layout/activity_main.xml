@@ -3,102 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
+    android:scaleType="fitXY"
+    android:background="@drawable/group_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/backgroundImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/intro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginRight="90dp"
-        android:src="@drawable/elipse216"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="351dp"
-        android:layout_height="326dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="13dp"
-        android:elevation="100dp"
-        android:src="@drawable/logo1aqua"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/backgroundImageView" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="426dp"
-        android:layout_height="478dp"
-        android:layout_marginTop="88dp"
-
-
-        android:src="@drawable/aaqua1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="264dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="-30dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:lineSpacingExtra="-6sp"
-        android:text="@string/kebaikan_be"
-        android:textAllCaps="true"
-        android:textAppearance="@style/kebaikan_al"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <TextView
-        android:id="@+id/terpercaya_"
-        android:layout_width="242dp"
-        android:layout_height="46dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
-        android:gravity="center"
-        android:lineSpacingExtra="0sp"
-        android:text="@string/terpercaya_"
-        android:textAppearance="@style/terpercaya_"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundImageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <Button
         android:layout_width="90dp"
         android:layout_height="64dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/arrow12"
 
 
         android:onClick="login"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/terpercaya_"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61"
         tools:ignore="SpeakableTextPresentCheck" />
 
 

@@ -42,4 +42,10 @@ public class main_menu extends AppCompatActivity {
         startActivity(intent );
 
     }
+
+    public void reedemv(View view) {
+        Intent intent = new Intent(main_menu.this,redeemv1.class);
+        startActivity(intent );
+
+    }
 }

@@ -118,11 +118,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_494" />
+
         <TextView
             android:id="@+id/tv_textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="halo" />
+        />
 
     </RelativeLayout>
 

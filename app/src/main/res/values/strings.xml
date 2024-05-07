@@ -63,5 +63,13 @@ Setiap kali Anda berhasil memindai kode yang belum pernah diklaim sebelumnya, An
 Scan KTP untuk melanjutkan proses klaim tutup botol. Pastikan foto KTP terlihat dengan jelas
 </string>
 
+    <string name="redeemvagan">
+RedeemVaganza
+</string>
+
+    <string name="some1_id">
+400
+</string>
+
 
 </resources>

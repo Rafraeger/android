@@ -16,6 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".selamat_undian"
+            android:exported="true" />
+        <activity
+            android:name=".spinwheel2"
+            android:exported="true" />
+        <activity
+            android:name=".spinwheel1"
+            android:exported="true" />
+        <activity
+            android:name=".redeemv2"
+            android:exported="true" />
+        <activity
+            android:name=".redeemv1"
+            android:exported="true" />
+        <activity
             android:name=".scan2"
             android:exported="true" />
         <activity

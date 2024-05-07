@@ -35,56 +35,78 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <View
-                android:id="@+id/freestocks_"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="19.91dp"
-                android:layout_marginTop="74.64dp"
-                android:background="@drawable/pp_dummy" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
 
-            <TextView
-                android:id="@+id/selamat_pag"
-                android:layout_width="338dp"
-                android:layout_height="46dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="142dp"
-                android:layout_marginTop="85dp"
-                android:gravity="center_vertical"
-                android:lineSpacingExtra="1sp"
-                android:text="@string/selamat_pag"
-                android:textAppearance="@style/selamat_pag" />
+                <View
+                    android:id="@+id/freestocks_"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/pp_dummy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.64" />
 
-            <TextView
-                android:id="@+id/selamat_name"
-                android:layout_width="338dp"
-                android:layout_height="46dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="142dp"
-                android:layout_marginTop="110dp"
-                android:gravity="center_vertical"
-                android:lineSpacingExtra="1sp"
-                android:text="Olivia Gabrielle"
-                android:textAppearance="@style/selamat_pag"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/selamat_pag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="22dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="@string/selamat_pag"
+                    android:textAppearance="@style/selamat_pag"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/freestocks_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.37" />
+
+                <TextView
+                    android:id="@+id/selamat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="-18dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:text="Olivia Gabrielle"
+                    android:textAppearance="@style/selamat_pag"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/freestocks_"
+                    app:layout_constraintTop_toBottomOf="@+id/selamat_pag" />
+
+                <TextView
+                    android:id="@+id/olivia_gabr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="-11dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="15sp"
+                    android:text="@string/olivia_gabr"
+                    android:textAppearance="@style/olivia_gabr"
+                    app:layout_constraintStart_toEndOf="@+id/freestocks_"
+                    app:layout_constraintTop_toBottomOf="@+id/selamat_name" />
+
+                <Button
+                    android:id="@+id/group_869"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@drawable/group_869"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.559"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
 
-            <TextView
-                android:id="@+id/olivia_gabr"
-                android:layout_width="318dp"
-                android:layout_height="23dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="142dp"
-                android:layout_marginTop="145dp"
-                android:gravity="center_vertical"
-                android:lineSpacingExtra="15sp"
-                android:text="@string/olivia_gabr"
-                android:textAppearance="@style/olivia_gabr" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <HorizontalScrollView
                 android:id="@+id/horizontal_view"
@@ -108,7 +130,9 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
-                        android:background="@drawable/horz_1" />
+                        android:background="@drawable/horz_1"
+                        android:onClick="reedemv"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <RelativeLayout
                         android:id="@+id/oip_4_2"
@@ -116,9 +140,9 @@
                         android:layout_height="214dp"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
-                        android:onClick="scan"
                         android:layout_toRightOf="@id/oip_4_1"
-                        android:background="@drawable/horz_2">
+                        android:background="@drawable/horz_2"
+                        android:onClick="scan">
 
                         <View
                             android:id="@+id/group_374"
@@ -181,17 +205,19 @@
                 android:id="@+id/rectangle_4"
                 android:layout_width="368dp"
                 android:layout_height="258dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="31dp"
-                android:layout_marginTop="464dp"
+                android:layout_below="@+id/horizontal_view"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/group_372_t"
                 android:elevation="10dp">
 
 
                 <Button
                     android:id="@+id/group_361"
-                    android:layout_width="164.46dp"
+                    android:layout_width="144dp"
                     android:layout_height="101dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
@@ -215,133 +241,119 @@
 
 
             </RelativeLayout>
-            
-            <RelativeLayout
-                android:id="@+id/group_379"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="224dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="774dp"
-                android:background="@drawable/group_379_t">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/pls_mns" />
-            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/group_378"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="31dp"
-                android:layout_marginTop="774dp"
-                android:background="@drawable/group_378_t">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/pls_mns" />
-
-            </RelativeLayout>
-            
-            <RelativeLayout
-                android:id="@+id/group_380"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="31dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="1004dp"
-                android:background="@drawable/group_380_t">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/pls_mns" />
-            </RelativeLayout>
-            
-            <RelativeLayout
-                android:id="@+id/group_381"
-                android:layout_width="175dp"
-                android:layout_height="211dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="224dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="1004dp"
-                android:background="@drawable/group_381_t">
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="97dp"
-                    android:layout_marginBottom="123dp"
-                    android:background="@drawable/pls_mns" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/frame_3668"
-                android:layout_width="368dp"
-                android:layout_height="122dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="31dp"
-                android:layout_marginTop="1297dp"
-                android:background="@drawable/group_382"
-                android:clipToOutline="true"
-                android:elevation="5dp">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="27dp"
-                    android:background="@drawable/pls_mns" />
-            </RelativeLayout>
-
-            <Button
-                android:id="@+id/group_869"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:id="@+id/w1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vaganza_fie"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="341dp"
-                android:layout_marginLeft="341dp"
-                android:layout_marginTop="95dp"
-                android:background="@drawable/group_869"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/group_378"
+                    android:layout_width="175dp"
+                    android:layout_height="211dp"
+                    android:background="@drawable/group_378_t">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="97dp"
+                        android:layout_marginBottom="123dp"
+                        android:background="@drawable/pls_mns" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_379"
+                    android:layout_width="175dp"
+                    android:layout_height="211dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-2dp"
+                    android:background="@drawable/group_379_t">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="97dp"
+                        android:layout_marginBottom="123dp"
+                        android:background="@drawable/pls_mns" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/w1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="175dp"
+                    android:layout_height="211dp"
+                    android:background="@drawable/group_380_t">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="97dp"
+                        android:layout_marginBottom="123dp"
+                        android:background="@drawable/pls_mns" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="175dp"
+                    android:layout_height="211dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-2dp"
+                    android:background="@drawable/group_381_t">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="97dp"
+                        android:layout_marginBottom="123dp"
+                        android:background="@drawable/pls_mns" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
 
             <TextView
                 android:id="@+id/vaganza_fie"
                 android:layout_width="258dp"
                 android:layout_height="28dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="31dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
                 android:layout_marginTop="734dp"
-                android:text="@string/vaganza_fie"
-                android:textAppearance="@style/vaganza_fie"
-                android:lineSpacingExtra="8sp"
                 android:gravity="center_vertical"
-                />
+                android:lineSpacingExtra="8sp"
+                android:text="@string/vaganza_fie"
+                android:textAppearance="@style/vaganza_fie" />
 
             <TextView
                 android:id="@+id/hadiah_mena"
@@ -357,11 +369,29 @@
                 android:gravity="center_vertical"
                 />
 
+            <RelativeLayout
+                android:id="@+id/frame_3668"
+                android:layout_width="368dp"
+                android:layout_height="122dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1302dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/group_382"
+                android:clipToOutline="true"
+                android:elevation="5dp">
 
-
-
-
-
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="27dp"
+                    android:background="@drawable/pls_mns" />
+            </RelativeLayout>
 
 
         </RelativeLayout>

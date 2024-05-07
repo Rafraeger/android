@@ -138,8 +138,8 @@
             android:layout_height="55dp"
             android:background="@drawable/button1"
             android:backgroundTint="@color/blue2"
-            android:text="Submit"
             android:onClick="scan_ktp"
+            android:text="Submit"
             android:textColor="@color/white" />
 
         <Button
