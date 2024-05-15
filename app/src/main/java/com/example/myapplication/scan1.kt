@@ -17,6 +17,9 @@ import com.budiyev.android.codescanner.CodeScannerView
 import com.budiyev.android.codescanner.DecodeCallback
 import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
+import android.widget.ImageView
+import android.view.View
+import com.google.firebase.database.FirebaseDatabase
 
 private const val CAMERA_REQUEST_CODE = 101
 
@@ -30,6 +33,8 @@ class scan1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan1)
 
+        val imageView: ImageView = findViewById(R.id.img_textView)
+        imageView.visibility = View.INVISIBLE
 
         val menu = findViewById<Button>(R.id.vector)
         menu.setOnClickListener {
@@ -45,7 +50,7 @@ class scan1 : AppCompatActivity() {
             }
         }
 
-        // Inisialisasi tv_textView dengan findViewById()
+
         tv_textView = findViewById(R.id.tv_textView)
 
         setupPermission()
@@ -54,6 +59,7 @@ class scan1 : AppCompatActivity() {
     }
 
     private fun codeScanner() {
+        val imageView: ImageView = findViewById(R.id.img_textView)
         codeScanner = CodeScanner(this, scannerView)
 
         codeScanner.apply {
@@ -67,7 +73,9 @@ class scan1 : AppCompatActivity() {
 
             decodeCallback = DecodeCallback {
                 runOnUiThread {
-                    tv_textView.text = it.text
+//                    tv_textView.text = it.text
+                    imageView.visibility = View.VISIBLE
+
                 }
             }
 

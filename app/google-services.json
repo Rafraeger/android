@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "768535362652",
+    "firebase_url": "https://myaqua-a6aa0-default-rtdb.firebaseio.com",
+    "project_id": "myaqua-a6aa0",
+    "storage_bucket": "myaqua-a6aa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768535362652:android:b33951ee1c8cf8c1cffa99",
+        "android_client_info": {
+          "package_name": "com.example.apliasiandro1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ9TGsR3cocKHW7w1mPFsuzgXrILxpGJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

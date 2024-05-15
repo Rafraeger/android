@@ -192,12 +192,12 @@
                         android:id="@+id/oip_4_3"
                         android:layout_width="317dp"
                         android:layout_height="214dp"
-                        android:layout_toRightOf="@id/oip_4_2"
+                        android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:layout_alignParentTop="true"
-                        android:background="@drawable/horz_3"
-                        />
+                        android:onClick="wheel"
+                        android:layout_toRightOf="@id/oip_4_2"
+                        android:background="@drawable/horz_3" />
                 </RelativeLayout>
             </HorizontalScrollView>
 

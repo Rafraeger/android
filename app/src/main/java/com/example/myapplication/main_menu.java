@@ -48,4 +48,10 @@ public class main_menu extends AppCompatActivity {
         startActivity(intent );
 
     }
+
+    public void wheel(View view) {
+        Intent intent = new Intent(main_menu.this,spinwheel1.class);
+        startActivity(intent );
+
+    }
 }
