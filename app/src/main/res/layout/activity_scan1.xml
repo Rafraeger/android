@@ -18,8 +18,8 @@
 
         <Button
             android:id="@+id/vector"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
             android:background="@drawable/vector_ek4"
@@ -84,10 +84,10 @@
         android:layout_width="270dp"
         android:layout_height="270dp"
         app:autoFocusButtonColor="@android:color/white"
-        app:autoFocusButtonVisible="true"
+        app:autoFocusButtonVisible="false"
         app:flashButtonColor="@android:color/white"
-        app:flashButtonVisible="true"
-        app:frameColor="@android:color/white"
+        app:flashButtonVisible="false"
+        app:frameColor="#1A529D"
         app:frameCornersSize="50dp"
         app:frameCornersRadius="0dp"
         app:frameAspectRatioWidth="1"
@@ -95,7 +95,7 @@
         app:frameSize="0.75"
         app:frameThickness="2dp"
         app:frameVerticalBias="0.5"
-        app:maskColor="#77000000"
+        app:maskColor="#E5EEF5"
 
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,6 +113,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scanner_view">
+
 
         <ImageView
             android:id="@+id/img_textView"

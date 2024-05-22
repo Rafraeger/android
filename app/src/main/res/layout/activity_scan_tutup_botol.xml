@@ -12,15 +12,15 @@
         android:layout_height="31dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="41dp"
+        android:layout_marginStart="21dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/vector"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
             android:background="@drawable/vector_ek4"

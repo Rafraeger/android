@@ -51,7 +51,7 @@ class scan2 : AppCompatActivity() {
             autoFocusMode = AutoFocusMode.SAFE
             scanMode = ScanMode.CONTINUOUS
             isAutoFocusEnabled = true
-            isFlashEnabled = true
+            isFlashEnabled = false
 
             decodeCallback = DecodeCallback {
                 runOnUiThread {

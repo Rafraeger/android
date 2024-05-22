@@ -192,6 +192,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="472dp"
         android:background="@drawable/rectangle_11"
+        android:onClick="register"
         android:text="Register"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

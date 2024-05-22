@@ -85,4 +85,9 @@ public class page_register extends AppCompatActivity {
         startActivity(intent );
 
     }
+    public void register(View view) {
+        Intent intent = new Intent(page_register.this,page_login.class);
+        startActivity(intent );
+
+    }
 }

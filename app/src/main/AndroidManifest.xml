@@ -34,9 +34,6 @@
             android:name=".scan2"
             android:exported="true" />
         <activity
-            android:name=".scantutupbotol"
-            android:exported="true" />
-        <activity
             android:name=".scan1"
             android:exported="true" />
         <activity
