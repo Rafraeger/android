@@ -1,10 +1,10 @@
 package com.example.myapplication
 
 import android.content.Intent
-import android.content.Context
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
@@ -19,15 +19,18 @@ import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
 import android.widget.ImageView
 import android.view.View
-import com.google.firebase.database.FirebaseDatabase
 
 private const val CAMERA_REQUEST_CODE = 101
+private const val DELAY_BEFORE_SCAN = 3000L // 3 detik
 
 class scan1 : AppCompatActivity() {
 
     private lateinit var codeScanner: CodeScanner
     private lateinit var scannerView: CodeScannerView
     private lateinit var tv_textView: TextView
+
+    private val scannedCodes = mutableListOf<String>()
+    private var isDelaying = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,20 +41,19 @@ class scan1 : AppCompatActivity() {
 
         val menu = findViewById<Button>(R.id.vector)
         menu.setOnClickListener {
-            Intent(this, main_menu::class.java).also{
+            Intent(this, main_menu::class.java).also {
                 startActivity(it)
             }
         }
 
         val btnlogin = findViewById<Button>(R.id.btnlogin)
         btnlogin.setOnClickListener {
-            Intent(this, scan2::class.java).also{
+            Intent(this, scan2::class.java).also {
                 startActivity(it)
             }
         }
 
-
-        tv_textView = findViewById(R.id.tv_textView)
+        tv_textView = findViewById(R.id.btnlogin)
 
         setupPermission()
         scannerView = findViewById(R.id.scanner_view)
@@ -60,6 +62,9 @@ class scan1 : AppCompatActivity() {
 
     private fun codeScanner() {
         val imageView: ImageView = findViewById(R.id.img_textView)
+        val imageViewWarning: ImageView = findViewById(R.id.img_textView_w)
+        imageViewWarning.visibility = View.INVISIBLE
+
         codeScanner = CodeScanner(this, scannerView)
 
         codeScanner.apply {
@@ -73,9 +78,18 @@ class scan1 : AppCompatActivity() {
 
             decodeCallback = DecodeCallback {
                 runOnUiThread {
-//                    tv_textView.text = it.text
-                    imageView.visibility = View.VISIBLE
-
+                    val scannedCode = it.text
+                    if (scannedCodes.contains(scannedCode)) {
+                        imageView.visibility = View.INVISIBLE
+                        imageViewWarning.visibility = View.VISIBLE
+                        tv_textView.text = "submit"
+                    } else {
+                        scannedCodes.add(scannedCode)
+                        imageView.visibility = View.VISIBLE
+                        imageViewWarning.visibility = View.INVISIBLE
+                        tv_textView.text = "save"
+                        startDelay()
+                    }
                 }
             }
 
@@ -87,16 +101,21 @@ class scan1 : AppCompatActivity() {
         }
 
         scannerView.setOnClickListener {
-            codeScanner.startPreview()
+            if (!isDelaying) {
+                codeScanner.startPreview()
+            }
         }
     }
 
     override fun onResume() {
         super.onResume()
-        codeScanner.startPreview()
+        if (!isDelaying) {
+            codeScanner.startPreview()
+        }
     }
 
     override fun onPause() {
+        codeScanner.releaseResources()
         super.onPause()
     }
 
@@ -128,15 +147,21 @@ class scan1 : AppCompatActivity() {
         when (requestCode) {
             CAMERA_REQUEST_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Izin kamera diberikan, lakukan tindakan yang sesuai di sini
                     codeScanner.startPreview()
                 } else {
-                    // Izin kamera tidak diberikan, tampilkan pesan kepada pengguna
                     Toast.makeText(this, "You need camera permission", Toast.LENGTH_SHORT).show()
                 }
             }
         }
     }
 
-
+    private fun startDelay() {
+        isDelaying = true
+        Handler().postDelayed({
+            isDelaying = false
+            if (!isFinishing) { // Check if activity is not finishing before starting preview again
+                codeScanner.startPreview()
+            }
+        }, DELAY_BEFORE_SCAN)
+    }
 }

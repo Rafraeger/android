@@ -54,4 +54,10 @@ public class main_menu extends AppCompatActivity {
         startActivity(intent );
 
     }
+
+    public void scan1(View view) {
+        Intent intent = new Intent(main_menu.this,scan1.class);
+        startActivity(intent );
+
+    }
 }

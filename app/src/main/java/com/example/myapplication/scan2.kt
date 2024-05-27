@@ -31,7 +31,12 @@ class scan2 : AppCompatActivity() {
         setContentView(R.layout.activity_scan2)
 
 
-
+        val btnlogin = findViewById<Button>(R.id.btnlogin)
+        btnlogin.setOnClickListener {
+            Intent(this, redeemv1::class.java).also{
+                startActivity(it)
+            }
+        }
 
         // Inisialisasi tv_textView dengan findViewById()
         tv_textView = findViewById(R.id.tv_textView)

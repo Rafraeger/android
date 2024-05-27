@@ -1,21 +1,23 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
-
-import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
 import java.util.Random;
 
 public class spinwheel1 extends AppCompatActivity {
 
     Button btnSpin;
     ImageView ivWheel;
-    CountDownTimer timer;
+    Handler handler;
+    Runnable runnable;
+    int rotationIncrement;
+    int totalRotation;
+    boolean isSpinning;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,43 +26,55 @@ public class spinwheel1 extends AppCompatActivity {
 
         btnSpin = findViewById(R.id.rectangle_11);
         ivWheel = findViewById(R.id.wheel);
-
-        Random random = new Random();
+        handler = new Handler();
 
         btnSpin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // disabling the button so that user
-                // should not click on the button
-                // while the wheel is spinning
                 btnSpin.setEnabled(false);
-
-                // reading random value between 10 to 30
-                int spin = random.nextInt(20)+10;
-
-                // since the wheel has 10 divisions, the
-                // rotation should be a multiple of
-                // 360/10 = 36 degrees
-                spin = spin * 36;
-
-                // timer for each degree movement
-                timer = new CountDownTimer(spin*20,1) {
-                    @Override
-                    public void onTick(long l) {
-                        // rotate the wheel
-                        float rotation = ivWheel.getRotation() + 2;
-                        ivWheel.setRotation(rotation);
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        // enabling the button again
-                        btnSpin.setEnabled(true);
-                    }
-                }.start();
-
+                startSpin();
             }
         });
+    }
 
+    private void startSpin() {
+        Random random = new Random();
+        totalRotation = random.nextInt(20) + 10;
+        totalRotation = totalRotation * 36;
+
+        rotationIncrement = 20;  // Initial speed
+        isSpinning = true;
+
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (isSpinning) {
+                    float rotation = ivWheel.getRotation() + rotationIncrement;
+                    ivWheel.setRotation(rotation);
+
+                    totalRotation -= rotationIncrement;
+                    if (totalRotation <= 0) {
+                        isSpinning = false;
+                        rotationIncrement = 0;
+                        btnSpin.setEnabled(true);
+
+                        // Intent to move to the next activity
+                        Intent intent = new Intent(spinwheel1.this, selamat_undian.class);
+                        startActivity(intent);
+                        finish(); // Optional: Close the current activity
+
+                        return;
+                    }
+
+                    if (totalRotation < 360) { // Slow down when close to stop
+                        rotationIncrement = Math.max(2, rotationIncrement - 1);
+                    }
+
+                    handler.postDelayed(this, 20); // Delay for smooth animation
+                }
+            }
+        };
+
+        handler.post(runnable);
     }
 }
