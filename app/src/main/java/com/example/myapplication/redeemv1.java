@@ -12,6 +12,7 @@ public class redeemv1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_redeemv1);
+
     }
 
     public void main_menu(View view) {

@@ -131,7 +131,6 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/horz_1"
-                        android:onClick="reedemv"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <RelativeLayout
@@ -243,105 +242,136 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/w1"
-                android:layout_width="wrap_content"
+            <!--            <RelativeLayout-->
+<!--                android:id="@+id/w1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/vaganza_fie"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/group_378"-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="211dp"-->
+<!--                    android:background="@drawable/group_378_t">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="64dp"-->
+<!--                        android:layout_height="28dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:layout_marginEnd="97dp"-->
+<!--                        android:layout_marginBottom="123dp"-->
+<!--                        android:background="@drawable/pls_mns" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/group_379"-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="211dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="-2dp"-->
+<!--                    android:background="@drawable/group_379_t">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="64dp"-->
+<!--                        android:layout_height="28dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:layout_marginEnd="97dp"-->
+<!--                        android:layout_marginBottom="123dp"-->
+<!--                        android:background="@drawable/pls_mns" />-->
+<!--                </RelativeLayout>-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/w1"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="211dp"-->
+<!--                    android:background="@drawable/group_380_t">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="64dp"-->
+<!--                        android:layout_height="28dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:layout_marginEnd="97dp"-->
+<!--                        android:layout_marginBottom="123dp"-->
+<!--                        android:background="@drawable/pls_mns" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="175dp"-->
+<!--                    android:layout_height="211dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="-2dp"-->
+<!--                    android:background="@drawable/group_381_t">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="64dp"-->
+<!--                        android:layout_height="28dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:layout_marginEnd="97dp"-->
+<!--                        android:layout_marginBottom="123dp"-->
+<!--                        android:background="@drawable/pls_mns" />-->
+<!--                </RelativeLayout>-->
+
+<!--            </RelativeLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/vaganza_fie"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:orientation="vertical"
 
-                <RelativeLayout
-                    android:id="@+id/group_378"
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:background="@drawable/group_378_t">
+                android:layout_marginTop="12dp">
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="90dp"
+                    android:onClick="reedemv"
+                    android:layout_marginBottom="10dp"
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
-                </RelativeLayout>
+                    />
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="10dp"
 
-                <RelativeLayout
-                    android:id="@+id/group_379"
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="-2dp"
-                    android:background="@drawable/group_379_t">
+                    />
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="10dp"
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
-                </RelativeLayout>
+                    />
 
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/w1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <RelativeLayout
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:background="@drawable/group_380_t">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="-2dp"
-                    android:background="@drawable/group_381_t">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
-                </RelativeLayout>
-
-            </RelativeLayout>
-
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/vaganza_fie"

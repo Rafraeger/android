@@ -71,5 +71,37 @@ RedeemVaganza
 400
 </string>
 
+    <!-- strings.xml -->
+    <string name="royalvaganz">
+Royalvaganza
+</string>
+
+    <string name="diskon_70_h">
+Diskon 70% Hotel Traveloka
+</string>
+
+    <string name="liburan_mud">
+Liburan mudah dengan penginapan harga murah. Memberikan diskon segala jenis hotel / penginapan yang tersedia di aplikasi traveloka dengan tanda \u00e2\u0080\u009cdiskon redeem aqua\u00e2\u0080\u009d. Dapatkan diskon hingga 70 persen. Berlaku untuk pengguna aplikasi traveloka. Kumpulkan poin sebanyak-banyak sesuai syarat dan ketentuan di bawah.
+</string>
+
+    <string name="syarat_kete">
+Syarat &amp; Ketentuan
+</string>
+
+    <string name="jumlah_mini">
+        - Jumlah minimal 200 poin\n
+        - Sudah memiliki akun di Traveloka\n
+        - Bersedia digantikan diskon yang lain jika diskon ini sudah habis\n
+        - Penukaran bisa dilakukan kapan saja
+</string>
+
+    <string name="jumlah_penu">
+Jumlah Penukaran
+</string>
+
+    <string name="total_poin">
+Total Poin
+</string>
+
 
 </resources>

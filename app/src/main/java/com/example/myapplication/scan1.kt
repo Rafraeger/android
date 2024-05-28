@@ -21,16 +21,16 @@ import android.widget.ImageView
 import android.view.View
 
 private const val CAMERA_REQUEST_CODE = 101
-private const val DELAY_BEFORE_SCAN = 3000L // 3 detik
+private const val SCAN_DELAY = 3000L // Delay in milliseconds (3 seconds)
 
 class scan1 : AppCompatActivity() {
 
     private lateinit var codeScanner: CodeScanner
     private lateinit var scannerView: CodeScannerView
     private lateinit var tv_textView: TextView
-
     private val scannedCodes = mutableListOf<String>()
-    private var isDelaying = false
+    private var isScanEnabled = true // Flag to control barcode scanning
+    private val handler = Handler()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +48,7 @@ class scan1 : AppCompatActivity() {
 
         val btnlogin = findViewById<Button>(R.id.btnlogin)
         btnlogin.setOnClickListener {
-            Intent(this, scan2::class.java).also {
+            Intent(this, main_menu::class.java).also {
                 startActivity(it)
             }
         }
@@ -79,16 +79,18 @@ class scan1 : AppCompatActivity() {
             decodeCallback = DecodeCallback {
                 runOnUiThread {
                     val scannedCode = it.text
-                    if (scannedCodes.contains(scannedCode)) {
-                        imageView.visibility = View.INVISIBLE
-                        imageViewWarning.visibility = View.VISIBLE
-                        tv_textView.text = "submit"
-                    } else {
-                        scannedCodes.add(scannedCode)
-                        imageView.visibility = View.VISIBLE
-                        imageViewWarning.visibility = View.INVISIBLE
-                        tv_textView.text = "save"
-                        startDelay()
+                    if (isScanEnabled) {
+                        if (scannedCodes.contains(scannedCode)) {
+                            imageView.visibility = View.INVISIBLE
+                            imageViewWarning.visibility = View.VISIBLE
+                            tv_textView.text = "submit"
+                        } else {
+                            scannedCodes.add(scannedCode)
+                            imageView.visibility = View.VISIBLE
+                            imageViewWarning.visibility = View.INVISIBLE
+                            tv_textView.text = "save"
+                            delayScan()
+                        }
                     }
                 }
             }
@@ -101,7 +103,7 @@ class scan1 : AppCompatActivity() {
         }
 
         scannerView.setOnClickListener {
-            if (!isDelaying) {
+            if (isScanEnabled) {
                 codeScanner.startPreview()
             }
         }
@@ -109,7 +111,7 @@ class scan1 : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        if (!isDelaying) {
+        if (isScanEnabled) {
             codeScanner.startPreview()
         }
     }
@@ -155,13 +157,13 @@ class scan1 : AppCompatActivity() {
         }
     }
 
-    private fun startDelay() {
-        isDelaying = true
-        Handler().postDelayed({
-            isDelaying = false
-            if (!isFinishing) { // Check if activity is not finishing before starting preview again
-                codeScanner.startPreview()
-            }
-        }, DELAY_BEFORE_SCAN)
+    // Method untuk menunda pemindaian barcode selama SCAN_DELAY
+    private fun delayScan() {
+        isScanEnabled = false
+        handler.postDelayed({
+            isScanEnabled = true
+            codeScanner.startPreview() // Restart the preview after delay
+        }, SCAN_DELAY)
     }
 }
+

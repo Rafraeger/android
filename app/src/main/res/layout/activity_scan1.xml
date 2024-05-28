@@ -21,7 +21,9 @@
             android:layout_width="25dp"
             android:layout_height="20dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="0dp"
+            android:layout_marginBottom="4dp"
             android:background="@drawable/vector_ek4"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -107,8 +109,8 @@
     <RelativeLayout
         android:id="@+id/group_386"
         android:layout_width="243dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="14dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

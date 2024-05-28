@@ -92,7 +92,7 @@
             android:id="@+id/group_379a"
             android:layout_width="175dp"
             android:layout_height="211dp"
-            android:background="@drawable/group_379a"
+            android:background="@drawable/group_380a"
             />
 
     </LinearLayout>
@@ -108,7 +108,8 @@
             android:id="@+id/group_380a"
             android:layout_width="175dp"
             android:layout_height="211dp"
-            android:background="@drawable/group_380a"
+            android:onClick="reedemv1"
+            android:background="@drawable/group_379a"
             />
         <ImageView
             android:id="@+id/group_870a"

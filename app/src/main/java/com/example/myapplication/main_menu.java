@@ -44,7 +44,7 @@ public class main_menu extends AppCompatActivity {
     }
 
     public void reedemv(View view) {
-        Intent intent = new Intent(main_menu.this,redeemv1.class);
+        Intent intent = new Intent(main_menu.this,redeemv2.class);
         startActivity(intent );
 
     }

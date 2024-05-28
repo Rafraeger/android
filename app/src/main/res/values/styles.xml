@@ -144,5 +144,44 @@
         <item name="android:textColor">#4D4D4D</item>
     </style>
 
+    <!-- styles.xml -->
+    <style name="royalvaganz">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#1A529D</item>
+    </style>
+
+    <style name="diskon_70_h">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="liburan_mud">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="syarat_kete">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+
+    <style name="jumlah_mini">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="jumlah_penu">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="total_poin">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+
+
 
 </resources>
