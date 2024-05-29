@@ -86,6 +86,7 @@
             android:id="@+id/group_378a"
             android:layout_width="175dp"
             android:layout_height="211dp"
+            android:onClick="reedemv1"
             android:background="@drawable/group_378a"
             />
         <ImageView
@@ -108,7 +109,6 @@
             android:id="@+id/group_380a"
             android:layout_width="175dp"
             android:layout_height="211dp"
-            android:onClick="reedemv1"
             android:background="@drawable/group_379a"
             />
         <ImageView

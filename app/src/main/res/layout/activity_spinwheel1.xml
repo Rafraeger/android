@@ -9,7 +9,7 @@
     tools:context=".spinwheel1">
     <RelativeLayout
         android:id="@+id/group_385"
-        android:layout_width="220dp"
+        android:layout_width="190dp"
         android:layout_height="31dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -35,7 +35,7 @@
             android:layout_marginEnd="0dp"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
-            android:text="@string/redeemvagan"
+            android:text="EkstraVaganza"
             android:textAppearance="@style/redeemvagan" />
 
     </RelativeLayout>
@@ -54,7 +54,7 @@
 
     <ImageView
         android:id="@+id/wheel"
-        android:layout_width="300dp"
+        android:layout_width="310dp"
         android:layout_height="300dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/wheel"

@@ -103,5 +103,10 @@ Jumlah Penukaran
 Total Poin
 </string>
 
+    <string name="pengguna_aplikasi_bisa_melakukan_penukaran_nmandiri_untuk_mendapatkan_hadiah">Pengguna aplikasi bisa melakukan penukaran\nmandiri untuk mendapatkan hadiah</string>
+    <string name="pengguna_aplikasi_dapat_memenangkan_nundian_hadiah_secara_reguler">Pengguna aplikasi dapat memenangkan\nundian hadiah secara reguler</string>
+    <string name="pengguna_aplikasi_dapat_memenangkan_nundian_hadiah_royal_big_prize">Pengguna aplikasi dapat memenangkan\nundian hadiah royal (big prize)</string>
+    <string name="surprise_gift">Surprise Gift</string>
+    <string name="nikmati_kesempatan_spesial_setiap_bulan_n_bagi_100_pengguna_paling_aktif_kami_n_hadiah_menarik_menanti">Nikmati kesempatan spesial setiap bulan\nbagi 100 pengguna paling aktif kami!\nHadiah menarik menanti</string>
 
 </resources>

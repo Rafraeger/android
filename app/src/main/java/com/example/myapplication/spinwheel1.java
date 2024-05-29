@@ -15,9 +15,10 @@ public class spinwheel1 extends AppCompatActivity {
     ImageView ivWheel;
     Handler handler;
     Runnable runnable;
-    int rotationIncrement;
     int totalRotation;
     boolean isSpinning;
+    long startTime;
+    long duration; // Total duration of spin in milliseconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,42 +40,44 @@ public class spinwheel1 extends AppCompatActivity {
 
     private void startSpin() {
         Random random = new Random();
-        totalRotation = random.nextInt(20) + 10;
-        totalRotation = totalRotation * 36;
-
-        rotationIncrement = 20;  // Initial speed
+        totalRotation = (random.nextInt(20) + 10) * 67; // Random total rotation between 360 and 1080 degrees
+        duration = (random.nextInt(3) + 2) * 1000; // Random duration between 2 and 4 seconds
         isSpinning = true;
+        startTime = System.currentTimeMillis();
 
         runnable = new Runnable() {
             @Override
             public void run() {
                 if (isSpinning) {
-                    float rotation = ivWheel.getRotation() + rotationIncrement;
+                    long currentTime = System.currentTimeMillis();
+                    long elapsedTime = currentTime - startTime;
+                    float fraction = (float) elapsedTime / duration;
+                    float easedFraction = cubicEaseOut(fraction);
+
+                    float rotation = totalRotation * easedFraction;
                     ivWheel.setRotation(rotation);
 
-                    totalRotation -= rotationIncrement;
-                    if (totalRotation <= 0) {
+                    if (fraction >= 1.0) {
                         isSpinning = false;
-                        rotationIncrement = 0;
                         btnSpin.setEnabled(true);
 
                         // Intent to move to the next activity
-                        Intent intent = new Intent(spinwheel1.this, selamat_undian.class);
+                        Intent intent = new Intent(spinwheel1.this, scan2.class);
                         startActivity(intent);
                         finish(); // Optional: Close the current activity
 
-                        return;
+                    } else {
+                        handler.postDelayed(this, 16); // Approximately 60 FPS
                     }
-
-                    if (totalRotation < 360) { // Slow down when close to stop
-                        rotationIncrement = Math.max(2, rotationIncrement - 1);
-                    }
-
-                    handler.postDelayed(this, 20); // Delay for smooth animation
                 }
             }
         };
 
         handler.post(runnable);
+    }
+
+    // Cubic easing out function
+    private float cubicEaseOut(float t) {
+        return 1 - (float)Math.pow(1 - t, 3);
     }
 }

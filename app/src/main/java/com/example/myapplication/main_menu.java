@@ -68,7 +68,7 @@ public class main_menu extends AppCompatActivity {
     }
 
     public void wheel(View view) {
-        Intent intent = new Intent(main_menu.this, spinwheel1.class);
+        Intent intent = new Intent(main_menu.this, selamat_undian.class);
         startActivity(intent);
     }
 

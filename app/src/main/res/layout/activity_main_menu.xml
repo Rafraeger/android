@@ -194,7 +194,6 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:onClick="wheel"
                         android:layout_toRightOf="@id/oip_4_2"
                         android:background="@drawable/horz_3" />
                 </RelativeLayout>
@@ -343,36 +342,85 @@
 <!--            </RelativeLayout>-->
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:id="@+id/w1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/vaganza_fie"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                android:layout_marginTop="12dp">
-                <View
-                    android:layout_width="360dp"
-                    android:layout_height="90dp"
+                <RelativeLayout
+                    android:id="@+id/redeemvaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
                     android:onClick="reedemv"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/vaganza_ss"
-                    />
-                <View
-                    android:layout_width="360dp"
-                    android:layout_height="90dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/vaganza_ss"
-                    />
-                <View
-                    android:layout_width="360dp"
-                    android:layout_height="90dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/vaganza_ss"
-                    />
+                    android:background="@drawable/redeemvaganza">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengguna_aplikasi_bisa_melakukan_penukaran_nmandiri_untuk_mendapatkan_hadiah"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/sea_blue"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="55dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ektravaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/redeemvaganza"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="wheel"
+                    android:background="@drawable/ekstravaganza">
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="55dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/pengguna_aplikasi_dapat_memenangkan_nundian_hadiah_secara_reguler"
+                        android:textColor="@color/sea_blue"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/royalvaganza"
+                    android:layout_below="@id/ektravaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/royalvaganza">
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengguna_aplikasi_dapat_memenangkan_nundian_hadiah_royal_big_prize"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="13dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="32dp"
+                        android:textColor="@color/sea_blue"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/vaganza_fie"
