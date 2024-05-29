@@ -19,6 +19,7 @@ import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
 import android.widget.ImageView
 import android.view.View
+import android.content.SharedPreferences
 
 private const val CAMERA_REQUEST_CODE = 101
 private const val SCAN_DELAY = 3000L // Delay in milliseconds (3 seconds)
@@ -89,6 +90,9 @@ class scan1 : AppCompatActivity() {
                             imageView.visibility = View.VISIBLE
                             imageViewWarning.visibility = View.INVISIBLE
                             tv_textView.text = "save"
+                            // Update the score
+                            updateScore()
+
                             delayScan()
                         }
                     }
@@ -106,6 +110,21 @@ class scan1 : AppCompatActivity() {
             if (isScanEnabled) {
                 codeScanner.startPreview()
             }
+        }
+    }
+
+    private fun updateScore() {
+        // Get the current score from SharedPreferences
+        val prefs = getSharedPreferences("myPrefs", MODE_PRIVATE)
+        var score = prefs.getInt("score", 30)
+
+        // Add 100 to the score
+        score += 100
+
+        // Save the updated score back to SharedPreferences
+        with(prefs.edit()) {
+            putInt("score", score)
+            apply()
         }
     }
 
@@ -166,4 +185,3 @@ class scan1 : AppCompatActivity() {
         }, SCAN_DELAY)
     }
 }
-

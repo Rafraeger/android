@@ -236,8 +236,9 @@
                     android:layout_marginBottom="156dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:lineSpacingExtra="-25sp"
-                    android:text="@string/some_id"
+                    android:text="30"
                     android:textAppearance="@style/some_id" />
+
 
 
             </RelativeLayout>
@@ -356,19 +357,19 @@
                     android:layout_height="90dp"
                     android:onClick="reedemv"
                     android:layout_marginBottom="10dp"
-
+                    android:background="@drawable/vaganza_ss"
                     />
                 <View
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:layout_marginBottom="10dp"
-
+                    android:background="@drawable/vaganza_ss"
                     />
                 <View
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:layout_marginBottom="10dp"
-
+                    android:background="@drawable/vaganza_ss"
                     />
 
             </LinearLayout>
