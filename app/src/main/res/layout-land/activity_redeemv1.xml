@@ -118,7 +118,7 @@
     <TextView
         android:id="@+id/jumlah_mini"
         android:layout_width="393dp"
-        android:layout_height="71dp"
+        android:layout_height="72dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
