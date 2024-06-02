@@ -7,4 +7,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="sea_blue">#1A529D</color>
     <color name="semi_black">#4D4D4D</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#1A529D</color>
 </resources>

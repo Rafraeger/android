@@ -14,7 +14,7 @@ public class selamat_undian extends AppCompatActivity {
         setContentView(R.layout.activity_selamat_undian);
     }
 
-    public void wheel(View view) {
+    public void wheel1(View view) {
         Intent intent = new Intent(selamat_undian.this, spinwheel1.class);
         startActivity(intent);
     }

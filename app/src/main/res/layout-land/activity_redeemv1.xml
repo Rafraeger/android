@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:background="@drawable/g_14"
+    tools:context=".redeemv1">
+    <RelativeLayout
+        android:id="@+id/group_385"
+        android:layout_width="220dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/vector"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:onClick="main_menu"
+            android:background="@drawable/vector_ek4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/scan_tutup_"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/redeemvagan"
+            android:textAppearance="@style/redeemvagan" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/royalvaganz"
+        android:layout_width="109dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/royalvaganz"
+        android:textAppearance="@style/royalvaganz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_385" />
+
+    <View
+        android:id="@+id/visual_1_ac"
+        android:layout_width="303dp"
+        android:layout_height="172dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/visual_1_ac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/royalvaganz" />
+
+
+    <TextView
+        android:id="@+id/diskon_70_h"
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/diskon_70_h"
+        android:textAppearance="@style/diskon_70_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/liburan_mud"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text="@string/liburan_mud"
+        android:textAppearance="@style/liburan_mud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diskon_70_h" />
+
+    <TextView
+        android:id="@+id/syarat_kete"
+        android:layout_width="185dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/syarat_kete"
+        android:textAppearance="@style/syarat_kete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liburan_mud" />
+
+    <TextView
+        android:id="@+id/jumlah_mini"
+        android:layout_width="393dp"
+        android:layout_height="71dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/jumlah_mini"
+        android:textAppearance="@style/jumlah_mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/syarat_kete" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="728dp"
+        android:layout_height="91dp"
+        android:background="@drawable/rectangle_518"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/jumlah_penu"
+        android:layout_width="134dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="88dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/jumlah_penu"
+        android:textAppearance="@style/jumlah_penu"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/total_poin"
+        android:layout_width="93dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="148dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/total_poin"
+        android:textAppearance="@style/total_poin"
+        app:layout_constraintEnd_toStartOf="@+id/some_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jumlah_penu" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="54dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="468dp"
+        android:background="@drawable/pls_mns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="36dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="480dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/some1_id"
+        android:textAppearance="@style/some1_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/rectangle_11"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle_11"
+        android:onClick="redeemv2"
+        android:text="Redeem"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

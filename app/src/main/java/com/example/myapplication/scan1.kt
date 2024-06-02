@@ -119,7 +119,7 @@ class scan1 : AppCompatActivity() {
         var score = prefs.getInt("score", 30)
 
         // Add 100 to the score
-        score += 300
+        score += 1
 
         // Save the updated score back to SharedPreferences
         with(prefs.edit()) {

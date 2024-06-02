@@ -181,6 +181,37 @@
         <item name="android:textColor">#4D4D4D</item>
     </style>
 
+    <style name="selamat_anda">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="diskon70h">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#1A529D</item>
+    </style>
+
+    <style name="sistem">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="pengguna_me">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="penukaran">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+    <style name="setiap_akhi">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style>
+
+
 
 
 

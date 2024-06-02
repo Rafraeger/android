@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scan2">
+    <RelativeLayout
+        android:id="@+id/group_385"
+        android:layout_width="220dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/vector"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/vector_ek4"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/scan_tutup_"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/scan_tutup_"
+            android:textAppearance="@style/scan_tutup_" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/freestocks_"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pp_dummy"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_385" />
+
+    <TextView
+        android:id="@+id/total_tutup"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/total_tutup"
+        android:textAppearance="@style/total_tutup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freestocks_" />
+
+    <TextView
+        android:id="@+id/setiap_kali"
+        android:layout_width="349dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/scan_ktp_un"
+        android:textAppearance="@style/setiap_kali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_tutup" />
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="348dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/group_388"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="false"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="false"
+        app:frameAspectRatioHeight="7"
+        app:frameAspectRatioWidth="10"
+        app:frameColor="#1A529D"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:frameVerticalBias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_385"
+        app:maskColor="#E5EEF5" />
+
+    <TextView
+        android:id="@+id/tv_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="616dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/frame_3670"
+        android:layout_width="319dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setiap_kali">
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button1"
+            android:backgroundTint="@color/blue2"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/button1"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -109,4 +109,30 @@ Total Poin
     <string name="surprise_gift">Surprise Gift</string>
     <string name="nikmati_kesempatan_spesial_setiap_bulan_n_bagi_100_pengguna_paling_aktif_kami_n_hadiah_menarik_menanti">Nikmati kesempatan spesial setiap bulan\nbagi 100 pengguna paling aktif kami!\nHadiah menarik menanti</string>
 
+    <string name="selamat_anda">Selamat Anda Mendapatkan\nUndian ExtraVaganza🎉</string>
+    <string name="diskon70h">Diskon 70% Hotel\ndi Aplikasi Traveloka</string>
+
+    <string name="sistem">
+Sistem
+</string>
+
+    <string name="pengguna_me">
+Pengguna memenangkan undian hadiah royal (big prize)
+</string>
+
+    <string name="penukaran">
+Penukaran
+</string>
+
+    <string name="setiap_akhi">
+Setiap akhir periode
+</string>
+
+    <string name="pengguna_me1">
+Pengguna menukarkan hadiah dengan memilih dari katalog
+</string>
+
+    <string name="kapan_saja_">
+Kapan saja selama periode program masih aktif
+</string>
 </resources>

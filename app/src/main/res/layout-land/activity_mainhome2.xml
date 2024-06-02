@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:background="@drawable/bg_main2"
+    tools:context=".Mainhome2">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="274dp"
+            android:layout_height="229dp"
+            android:layout_marginTop="-45dp"
+            android:src="@drawable/gp2_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="254dp"
+            android:layout_height="295dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:src="@drawable/gp2_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="167dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/button1"
+            android:backgroundTint="@color/blue"
+            android:onClick="page_login"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="167dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button1"
+            android:onClick="page_register"
+            android:text="Register"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="419dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text=" Kebaikan Alam Kebaikan Hidup"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,8 +41,8 @@
             android:id="@+id/imageView13"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
             android:layout_marginLeft="28dp"
+            android:layout_marginTop="100dp"
             app:srcCompat="@drawable/line_sidebar" />
 
         <RelativeLayout

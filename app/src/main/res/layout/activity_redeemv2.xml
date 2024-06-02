@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scaleType="fitXY"
-    android:background="@drawable/group_15"
+    android:background="@drawable/white_background"
     tools:context=".redeemv2">
     <RelativeLayout
         android:id="@+id/group_385"
@@ -41,17 +41,94 @@
     </RelativeLayout>
 
 
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="413dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_385">
+
+        <TextView
+            android:id="@+id/sistem"
+            android:layout_width="46dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="66dp"
+            android:layout_toStartOf="@+id/pengguna_me"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/sistem"
+            android:textAppearance="@style/sistem" />
+
+        <TextView
+            android:id="@+id/pengguna_me"
+            android:layout_width="220dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="52dp"
+            android:gravity="center_vertical"
+            android:text="@string/pengguna_me1"
+            android:textAppearance="@style/pengguna_me" />
+
+        <TextView
+            android:id="@+id/penukaran"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sistem"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="53dp"
+            android:layout_toStartOf="@+id/setiap_akhi"
+            android:gravity="center_vertical"
+            android:text="Periode penukaran"
+            android:textAppearance="@style/penukaran" />
+
+        <TextView
+            android:id="@+id/setiap_akhi"
+            android:layout_width="202dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/pengguna_me"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="76dp"
+            android:gravity="center_vertical"
+            android:text="@string/kapan_saja_"
+            android:textAppearance="@style/setiap_akhi" />
+
+        <View
+            android:id="@+id/line_12"
+            android:layout_width="385dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="128dp"
+            android:background="@drawable/line_12" />
+
+    </RelativeLayout>
+
+
     <LinearLayout
         android:id="@+id/rectangle_11"
         android:layout_width="321dp"
         android:layout_height="52dp"
-        android:layout_marginTop="188dp"
         android:background="@drawable/rectangle_11"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/rel">
 
         <TextView
             android:layout_width="0dp"

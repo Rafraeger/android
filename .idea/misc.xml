@@ -22,27 +22,39 @@
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/ic_visibility_off.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/ic_visibility_on.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/line_12.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/rectangle_11.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/rectangle_4.xml" value="0.14375" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/rectangle_494.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/drawable/sabsasa.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/font/font.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_main.xml" value="0.3550420168067227" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_main_menu.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_mainhome2.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_page_login.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_page_register.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_redeemv1.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_redeemv2.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_scan1.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_scan2.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_selamat_undian.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout-land/activity_spinwheel1.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_main_menu.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_mainhome2.xml" value="0.22" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_page_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_page_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_page_register.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_redeemv1.xml" value="0.6" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_redeemv2.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_redeemv1.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_redeemv2.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_scan1.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_scan2.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_scan2.xml" value="0.22" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_scan_ktp.xml" value="0.1" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_scan_tutup_botol.xml" value="0.22" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_scantutupbotol.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_selamat_klaim_tutup_botol.xml" value="0.22" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_selamat_undian.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_selamat_undian.xml" value="0.22" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_side_bar_nav.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_spinwheel1.xml" value="0.22" />
+        <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_spinwheel1.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/activity_spinwheel2.xml" value="0.22" />
         <entry key="..\:/Users/Rafif/AndroidStudioProjects/Aqualogin666666/app/src/main/res/layout/sidebar.xml" value="0.17552083333333332" />
       </map>
